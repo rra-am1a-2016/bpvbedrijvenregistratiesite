@@ -1,5 +1,20 @@
 <div class="page-header">
-        <h1>Sticky footer with fixed navbar</h1>
+        <h1>Het gebruik van variabelen met LESS</h1>
 </div>
-<p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-<p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+<p class="lead">
+<p>Met LESS kun je gebruik maken van variabelen. Hieronder staat een voorbeeld</p>
+  <code>
+     <pre>
+@color: #0000FF + #00FF00 + #110000;
+@borderWidth: 20 + 30;
+@unit: em;
+
+#content
+{
+  border: ~"@{borderWidth}@{unit}" solid @color;
+};
+    </pre>
+  </code>
+<p>De onderstaande div heeft opmaak die is gemaakt met 7 LESS variabelen @colorText,
+@borderWidth, @borderRadius, @backgroundColor, @fontSize, @width, @height.</p>
+</p>
