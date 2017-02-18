@@ -16,7 +16,7 @@
     </pre>
   </code>
 <p>De onderstaande div heeft opmaak die is gemaakt met 7 LESS variabelen @colorText,
-@borderWidth, @borderRadius, @backgroundColor, @fontSize, @width  @height.</p>
+@borderWidth, @borderRadius, @backgroundColor, @fontSize, @width en @height.</p>
 </p>
 
 
