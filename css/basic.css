@@ -1,3 +1,18 @@
 #content {
-  border: 50em solid #11ffff;
+  border: 2px solid #ffffff;
+}
+#divLessOpmaak {
+  border: 4px solid #a9a9a9;
+  width: 50%;
+  height: 100px;
+  background-color: #dcdcdc;
+  color: #ffffff;
+  padding: 0.8em;
+}
+#paraMixin {
+  /*
+  .opmaakDiv(0.2, em, dashed, rgb(200, 200, 20));
+  */
+  border: 5px solid black;
+  padding: 20px;
 }

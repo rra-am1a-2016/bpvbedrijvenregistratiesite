@@ -20,6 +20,9 @@
     <!-- Custom styles for this template -->
     <link href="./sticky-footer-navbar.css" rel="stylesheet">
 
+    <!-- Dit is mijn gecompileerde css versie van mijn less bestand. -->
+    <link rel="stylesheet" href="./css/basic.css">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="./bootstrap-3.3.7/js/ie-emulation-modes-warning.js"></script>

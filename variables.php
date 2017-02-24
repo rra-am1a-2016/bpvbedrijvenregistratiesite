@@ -19,5 +19,49 @@
 @borderWidth, @borderRadius, @backgroundColor, @fontSize, @width en @height.</p>
 </p>
 
+<code>
+  <pre>
+@borderColor: darken(@backgroundColor, 20%);
+@borderThickness: 4;
+@lineStyle: solid;
+@width: 50%;
+@height: 100px;
+@backgroundColor: rgba(220, 220, 220, 1.0);
+@color: lighten(@backgroundColor, 60%);
+@padding: 0.8em;
+@font_extension: family;
+
+
+#divLessOpmaak
+{
+  border: ~"@{borderThickness}px" @lineStyle @borderColor;
+  width: @width;
+  height: @height;
+  background-color: @backgroundColor;
+  color: @color;
+  padding: @padding;
+  font-family: "Verdana";
+}
+
+  </pre>
+</code>
+
+
+
+<div id="divLessOpmaak">
+    Dit is een div waarvan de css properties zijn ingesteld met LESS
+</div>
+
+
+<hr>
+<hr>
+
+<p>We gaan nu een basale mixin maken met parameter</p>
+<p>Opdracht: maak een div waarvan de opmaak geregeld wordt door een mixin met parameters</p>
+
+<div id="paraMixin">
+  Dit is een div waarvan de opmaak wordt geregeld door een mixin met parameters
+</div>
+
 
 

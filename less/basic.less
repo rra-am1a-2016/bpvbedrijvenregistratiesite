@@ -1,8 +1,48 @@
-@color: #0000FF + #00FF00 + #110000;
-@borderWidth: 20 + 30;
-@unit: em;
+@color: #0000FF + #00FF00;
+@borderWidth: 2;
+@unit: px;
 
 #content
 {
   border: ~"@{borderWidth}@{unit}" solid @color;
 }
+
+
+@borderColor: darken(@backgroundColor, 20%);
+@borderThickness: 4;
+@lineStyle: solid;
+@width: 50%;
+@height: 100px;
+@backgroundColor: rgba(220, 220, 220, 1.0);
+@color: lighten(@backgroundColor, 60%);
+@padding: 0.8em;
+
+
+#divLessOpmaak
+{
+  border: ~"@{borderThickness}px" @lineStyle @borderColor;
+  width: @width;
+  height: @height;
+  background-color: @backgroundColor;
+  color: @color;
+  padding: @padding;
+}
+
+
+
+.opmaakDiv(@thickness: 5, @pxOrEm: px, @borderStyle: solid, @borderColor: black)
+{
+  border:~"@{thickness}@{pxOrEm}" @borderStyle @borderColor;
+  @newValue: 4 * @thickness;
+  padding: ~"@{newValue}@{pxOrEm}";
+
+}
+
+#paraMixin
+{
+  /*
+  .opmaakDiv(0.2, em, dashed, rgb(200, 200, 20));
+  */
+  .opmaakDiv;
+}
+
