@@ -1,5 +1,8 @@
 #content {
-  border: 2px solid #ffffff;
+  border: 10px solid #0000FF;
+  background-image: url("../images/groenten_klein.jpg");
+  width: 400px;
+  height: 400px;
 }
 #divLessOpmaak {
   border: 4px solid #a9a9a9;
@@ -15,4 +18,9 @@
   */
   border: 5px solid black;
   padding: 20px;
+}
+#guarded_mixin_example {
+  border: 20px dashed black;
+  background-color: pink;
+  color: white;
 }

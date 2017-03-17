@@ -5,16 +5,27 @@
 <p>Met LESS kun je gebruik maken van variabelen. Hieronder staat een voorbeeld</p>
   <code>
      <pre>
-@color: #0000FF + #00FF00 + #110000;
-@borderWidth: 20 + 30;
-@unit: em;
+@color1: #0000FF;
+@borderWidth: 10;
+@unit: px;
+@path: "../images/";
 
 #content
 {
-  border: ~"@{borderWidth}@{unit}" solid @color;
-};
+  border: ~"@{borderWidth}@{unit}" solid @color1;
+  background-image: url("@{path}groenten_klein.jpg");
+  width: 400px;
+  height: 400px;
+}
     </pre>
   </code>
+
+<div id='content'>
+    div#content
+</div>
+
+<hr>
+
 <p>De onderstaande div heeft opmaak die is gemaakt met 7 LESS variabelen @colorText,
 @borderWidth, @borderRadius, @backgroundColor, @fontSize, @width en @height.</p>
 </p>
@@ -49,19 +60,7 @@
 
 
 <div id="divLessOpmaak">
-    Dit is een div waarvan de css properties zijn ingesteld met LESS
+    Dit is een div#divLessOpmaak waarvan de css properties zijn ingesteld met LESS.
 </div>
-
-
-<hr>
-<hr>
-
-<p>We gaan nu een basale mixin maken met parameter</p>
-<p>Opdracht: maak een div waarvan de opmaak geregeld wordt door een mixin met parameters</p>
-
-<div id="paraMixin">
-  Dit is een div waarvan de opmaak wordt geregeld door een mixin met parameters
-</div>
-
 
 

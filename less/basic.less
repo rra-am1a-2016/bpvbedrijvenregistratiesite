@@ -1,10 +1,15 @@
-@color: #0000FF + #00FF00;
-@borderWidth: 2;
+// 1. Variables
+@color1: #0000FF;
+@borderWidth: 10;
 @unit: px;
+@path: "../images/";
 
 #content
 {
-  border: ~"@{borderWidth}@{unit}" solid @color;
+  border: ~"@{borderWidth}@{unit}" solid @color1;
+  background-image: url("@{path}groenten_klein.jpg");
+  width: 400px;
+  height: 400px;
 }
 
 
@@ -29,7 +34,7 @@
 }
 
 
-
+// 2. Mixins
 .opmaakDiv(@thickness: 5, @pxOrEm: px, @borderStyle: solid, @borderColor: black)
 {
   border:~"@{thickness}@{pxOrEm}" @borderStyle @borderColor;
@@ -38,6 +43,7 @@
 
 }
 
+// Hier wordt de mixin aangeroepen door een div#paraMixin
 #paraMixin
 {
   /*
@@ -45,4 +51,23 @@
   */
   .opmaakDiv;
 }
+
+// 3. Guarded Mixins
+.guardedMixin (@borderLineThickness) when (@borderLineThickness <= 10px){
+  border: @borderLineThickness solid black;
+  background-color: green;
+}
+.guardedMixin (@borderLineThickness) when (@borderLineThickness > 10px){
+  border: @borderLineThickness dashed black;
+  background-color: pink;
+}
+.guardedMixin (@_) {
+  color: white;
+}
+
+
+#guarded_mixin_example {
+  .guardedMixin(20px);
+}
+
 

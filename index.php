@@ -69,8 +69,9 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LESS tutorial <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="./index.php?content=variables">Variables</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="./index.php?content=mixins">Mixins</a></li>
+                <li><a href="./index.php?content=guarded_mixins">Guarded Mixins</a></li>
+                <li><a href="./index.php?content=less_loops">Looping with Less</a></li>
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
